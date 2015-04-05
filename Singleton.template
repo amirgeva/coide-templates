@@ -1,18 +1,18 @@
-class $SELECTION$
+class ${SELECTION}
 {
 public:
-  static $SELECTION$* instance()
+  static ${SELECTION}* instance()
   {
-    static std::unique_ptr<$SELECTION$> ptr(new $SELECTION$);
+    static std::unique_ptr<${SELECTION}> ptr(new ${SELECTION});
     return ptr.get();
   }
   
 private:
-  friend struct std::default_delete<$SELECTION$>;
-  $SELECTION$() {}
-  ~$SELECTION$() {}
-  $SELECTION$(const $SELECTION$& rhs) {}
-  $SELECTION$& operator= (const $SELECTION$& rhs) { return *this; }
+  friend struct std::default_delete<${SELECTION}>;
+  ${SELECTION}() {}
+  ~${SELECTION}() {}
+  ${SELECTION}(const ${SELECTION}& rhs) {}
+  ${SELECTION}& operator= (const ${SELECTION}& rhs) { return *this; }
 };
 
 
